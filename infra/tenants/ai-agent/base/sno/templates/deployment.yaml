@@ -4,6 +4,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ai-agent
+  annotations:
+    image.openshift.io/triggers: >-
+      [{"from":{"kind":"ImageStreamTag","name":"ai-agent:latest","namespace":"ai-agent"},"fieldPath":"spec.template.spec.containers[?(@.name==\"agent-service\")].image"}]  
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
