@@ -90,7 +90,7 @@ def run_agent(pod_name, namespace):
 
         Output:
         The pod is in a **CrashLoopBackOff** state because it was **OOMKilled**. The container tried to use more memory than its configured limit.
-        {{\"name\":\"create_issue\",\"arguments\":{{\"owner\":\"redhat-ai-services\",\"repo\":\"etx-agentic-ai\",\"title\":\"Issue with Etx pipeline\",\"body\":\"### Cluster/namespace location\\npipelines/data-processor-xyz\\n\\n### Summary of the problem\\nThe pod is in a CrashLoopBackOff state because it was OOMKilled (Out of Memory).\\n\\n### Detailed error/code\\nCrashLoopBackOff, Last state: OOMKilled\\n\\n### Possible solutions\\n1. Increase the memory limit in the pod's deployment configuration.\\n2. Analyze the application for memory leaks.\"}}}}
+        {{\"name\":\"create_issue\",\"arguments\":{{\"owner\":\"wkulhanek\",\"repo\":\"etx-agentic-ai\",\"title\":\"Issue with Etx pipeline\",\"body\":\"### Cluster/namespace location\\npipelines/data-processor-xyz\\n\\n### Summary of the problem\\nThe pod is in a CrashLoopBackOff state because it was OOMKilled (Out of Memory).\\n\\n### Detailed error/code\\nCrashLoopBackOff, Last state: OOMKilled\\n\\n### Possible solutions\\n1. Increase the memory limit in the pod's deployment configuration.\\n2. Analyze the application for memory leaks.\"}}}}
         ---
 
         NOW, YOUR TURN:
